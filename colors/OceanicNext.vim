@@ -186,6 +186,9 @@ endfunction
   call s:hi('TSVariableBuiltin',                  s:red,    '',       '',          '')
   call s:hi('TSLabel',                            s:cyan,   '',       '',          '')
 
+  call s:hi("@variable.builtin", s:yellow, "", "", "")
+  call s:hi("@variable.this", s:purple, "", "", "")
+
   call s:hi('SpellBad',                           '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                         '',       '',       'undercurl', '')
   call s:hi('SpellCap',                           '',       '',       'undercurl', '')
