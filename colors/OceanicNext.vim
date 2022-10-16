@@ -166,28 +166,13 @@ endfunction
 
 
   " TreeSitter stuff
-  call s:hi('TSInclude',                          s:cyan,   '',       '',          '')
-  call s:hi('TSPunctBracket',                     s:cyan,   '',       '',          '')
-  call s:hi('TSPunctDelimiter',                   s:base07, '',       '',          '')
-  call s:hi('TSParameter',                        s:base07, '',       '',          '')
-  call s:hi('TSType',                             s:blue,   '',       '',          '')
-  call s:hi('TSFunction',                         s:cyan,   '',       '',          '')
-
-  call s:hi('TSTagDelimiter',                     s:cyan,   '',       '',          '')
-  call s:hi('TSProperty',                         s:yellow, '',       '',          '')
-  call s:hi('TSMethod',                           s:blue,   '',       '',          '')
-  call s:hi('TSParameter',                        s:yellow, '',       '',          '')
-  call s:hi('TSConstructor',                      s:base07, '',       '',          '')
-  call s:hi('TSVariable',                         s:base07, '',       '',          '')
-  call s:hi('TSOperator',                         s:base07, '',       '',          '')
-  call s:hi('TSTag',                              s:base07, '',       '',          '')
-  call s:hi('TSKeyword',                          s:purple, '',       '',          '')
-  call s:hi('TSKeywordOperator',                  s:purple, '',       '',          '')
-  call s:hi('TSVariableBuiltin',                  s:red,    '',       '',          '')
-  call s:hi('TSLabel',                            s:cyan,   '',       '',          '')
-
-  call s:hi("@variable.builtin", s:yellow, "", "", "")
-  call s:hi("@variable.this", s:purple, "", "", "")
+  call s:hi("@type",                                s:yellow,   "",     "",         "")
+  call s:hi("@constructor",                         s:yellow,   "",     s:bold,     "")
+  call s:hi("@variable.builtin",                    s:yellow,   "",     "",         "")
+  call s:hi("@variable.this",                       s:purple,   "",     "",         "")
+  call s:hi("@repeat",                              s:purple,   "",     "",         "")
+  call s:hi("@parameter",                           s:orange,   "",     "",         "")
+  call s:hi("@function.call",                       s:blue,     "",     "",         "")
 
   call s:hi('SpellBad',                           '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                         '',       '',       'undercurl', '')
