@@ -173,6 +173,10 @@ endfunction
   call s:hi("@repeat",                              s:purple,   "",     "",         "")
   call s:hi("@parameter",                           s:orange,   "",     "",         "")
   call s:hi("@function.call",                       s:blue,     "",     "",         "")
+  call s:hi("@text.reference",                      s:blue,     "",     "underline","")
+  call s:hi("@text.uri",                            s:purple,    "",     "",         "")
+  call s:hi("@text.title",                          s:green,     "",     "",         "")
+
 
   call s:hi('SpellBad',                           '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                         '',       '',       'undercurl', '')
